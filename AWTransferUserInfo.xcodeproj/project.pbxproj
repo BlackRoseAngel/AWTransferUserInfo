@@ -12,7 +12,57 @@
 		FEC0AF2A2028D93700054A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF282028D93700054A85 /* Main.storyboard */; };
 		FEC0AF2C2028D93700054A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF2B2028D93700054A85 /* Assets.xcassets */; };
 		FEC0AF2F2028D93700054A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF2D2028D93700054A85 /* LaunchScreen.storyboard */; };
+		FEC0AF3C2028D95A00054A85 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF3A2028D95A00054A85 /* Interface.storyboard */; };
+		FEC0AF3E2028D95A00054A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF3D2028D95A00054A85 /* Assets.xcassets */; };
+		FEC0AF452028D95A00054A85 /* AWApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FEC0AF442028D95A00054A85 /* AWApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FEC0AF4A2028D95A00054A85 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0AF492028D95A00054A85 /* InterfaceController.swift */; };
+		FEC0AF4C2028D95A00054A85 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0AF4B2028D95A00054A85 /* ExtensionDelegate.swift */; };
+		FEC0AF4E2028D95A00054A85 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0AF4D2028D95A00054A85 /* NotificationController.swift */; };
+		FEC0AF502028D95A00054A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC0AF4F2028D95A00054A85 /* Assets.xcassets */; };
+		FEC0AF552028D95A00054A85 /* AWApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FEC0AF382028D95A00054A85 /* AWApp.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEC0AF462028D95A00054A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC0AF192028D93700054A85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC0AF432028D95A00054A85;
+			remoteInfo = "AWApp Extension";
+		};
+		FEC0AF532028D95A00054A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC0AF192028D93700054A85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC0AF372028D95A00054A85;
+			remoteInfo = AWApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEC0AF592028D95A00054A85 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FEC0AF452028D95A00054A85 /* AWApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC0AF5D2028D95A00054A85 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FEC0AF552028D95A00054A85 /* AWApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FEC0AF212028D93700054A85 /* AWTransferUserInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWTransferUserInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +72,28 @@
 		FEC0AF2B2028D93700054A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC0AF2E2028D93700054A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEC0AF302028D93700054A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC0AF382028D95A00054A85 /* AWApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC0AF3B2028D95A00054A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FEC0AF3D2028D95A00054A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC0AF3F2028D95A00054A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC0AF442028D95A00054A85 /* AWApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AWApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC0AF492028D95A00054A85 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FEC0AF4B2028D95A00054A85 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FEC0AF4D2028D95A00054A85 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FEC0AF4F2028D95A00054A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC0AF512028D95A00054A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC0AF522028D95A00054A85 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FEC0AF1E2028D93700054A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC0AF412028D95A00054A85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				FEC0AF232028D93700054A85 /* AWTransferUserInfo */,
+				FEC0AF392028D95A00054A85 /* AWApp */,
+				FEC0AF482028D95A00054A85 /* AWApp Extension */,
 				FEC0AF222028D93700054A85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				FEC0AF212028D93700054A85 /* AWTransferUserInfo.app */,
+				FEC0AF382028D95A00054A85 /* AWApp.app */,
+				FEC0AF442028D95A00054A85 /* AWApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +136,29 @@
 			path = AWTransferUserInfo;
 			sourceTree = "<group>";
 		};
+		FEC0AF392028D95A00054A85 /* AWApp */ = {
+			isa = PBXGroup;
+			children = (
+				FEC0AF3A2028D95A00054A85 /* Interface.storyboard */,
+				FEC0AF3D2028D95A00054A85 /* Assets.xcassets */,
+				FEC0AF3F2028D95A00054A85 /* Info.plist */,
+			);
+			path = AWApp;
+			sourceTree = "<group>";
+		};
+		FEC0AF482028D95A00054A85 /* AWApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FEC0AF492028D95A00054A85 /* InterfaceController.swift */,
+				FEC0AF4B2028D95A00054A85 /* ExtensionDelegate.swift */,
+				FEC0AF4D2028D95A00054A85 /* NotificationController.swift */,
+				FEC0AF4F2028D95A00054A85 /* Assets.xcassets */,
+				FEC0AF512028D95A00054A85 /* Info.plist */,
+				FEC0AF522028D95A00054A85 /* PushNotificationPayload.apns */,
+			);
+			path = "AWApp Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +169,51 @@
 				FEC0AF1D2028D93700054A85 /* Sources */,
 				FEC0AF1E2028D93700054A85 /* Frameworks */,
 				FEC0AF1F2028D93700054A85 /* Resources */,
+				FEC0AF5D2028D95A00054A85 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FEC0AF542028D95A00054A85 /* PBXTargetDependency */,
 			);
 			name = AWTransferUserInfo;
 			productName = AWTransferUserInfo;
 			productReference = FEC0AF212028D93700054A85 /* AWTransferUserInfo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FEC0AF372028D95A00054A85 /* AWApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC0AF5A2028D95A00054A85 /* Build configuration list for PBXNativeTarget "AWApp" */;
+			buildPhases = (
+				FEC0AF362028D95A00054A85 /* Resources */,
+				FEC0AF592028D95A00054A85 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC0AF472028D95A00054A85 /* PBXTargetDependency */,
+			);
+			name = AWApp;
+			productName = AWApp;
+			productReference = FEC0AF382028D95A00054A85 /* AWApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FEC0AF432028D95A00054A85 /* AWApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC0AF562028D95A00054A85 /* Build configuration list for PBXNativeTarget "AWApp Extension" */;
+			buildPhases = (
+				FEC0AF402028D95A00054A85 /* Sources */,
+				FEC0AF412028D95A00054A85 /* Frameworks */,
+				FEC0AF422028D95A00054A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWApp Extension";
+			productName = "AWApp Extension";
+			productReference = FEC0AF442028D95A00054A85 /* AWApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +226,14 @@
 				ORGANIZATIONNAME = "Black Rose Productions";
 				TargetAttributes = {
 					FEC0AF202028D93700054A85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FEC0AF372028D95A00054A85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FEC0AF432028D95A00054A85 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +253,8 @@
 			projectRoot = "";
 			targets = (
 				FEC0AF202028D93700054A85 /* AWTransferUserInfo */,
+				FEC0AF372028D95A00054A85 /* AWApp */,
+				FEC0AF432028D95A00054A85 /* AWApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +270,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEC0AF362028D95A00054A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC0AF3E2028D95A00054A85 /* Assets.xcassets in Resources */,
+				FEC0AF3C2028D95A00054A85 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC0AF422028D95A00054A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC0AF502028D95A00054A85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +299,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEC0AF402028D95A00054A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC0AF4E2028D95A00054A85 /* NotificationController.swift in Sources */,
+				FEC0AF4C2028D95A00054A85 /* ExtensionDelegate.swift in Sources */,
+				FEC0AF4A2028D95A00054A85 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEC0AF472028D95A00054A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC0AF432028D95A00054A85 /* AWApp Extension */;
+			targetProxy = FEC0AF462028D95A00054A85 /* PBXContainerItemProxy */;
+		};
+		FEC0AF542028D95A00054A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC0AF372028D95A00054A85 /* AWApp */;
+			targetProxy = FEC0AF532028D95A00054A85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FEC0AF282028D93700054A85 /* Main.storyboard */ = {
@@ -158,6 +339,14 @@
 				FEC0AF2E2028D93700054A85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FEC0AF3A2028D95A00054A85 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC0AF3B2028D95A00054A85 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +489,80 @@
 			};
 			name = Release;
 		};
+		FEC0AF572028D95A00054A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF7UZR73AE;
+				INFOPLIST_FILE = "AWApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRP.AWTransferUserInfo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FEC0AF582028D95A00054A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF7UZR73AE;
+				INFOPLIST_FILE = "AWApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRP.AWTransferUserInfo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		FEC0AF5B2028D95A00054A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF7UZR73AE;
+				IBSC_MODULE = AWApp_Extension;
+				INFOPLIST_FILE = AWApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRP.AWTransferUserInfo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FEC0AF5C2028D95A00054A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF7UZR73AE;
+				IBSC_MODULE = AWApp_Extension;
+				INFOPLIST_FILE = AWApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRP.AWTransferUserInfo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +580,24 @@
 			buildConfigurations = (
 				FEC0AF342028D93700054A85 /* Debug */,
 				FEC0AF352028D93700054A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC0AF562028D95A00054A85 /* Build configuration list for PBXNativeTarget "AWApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC0AF572028D95A00054A85 /* Debug */,
+				FEC0AF582028D95A00054A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC0AF5A2028D95A00054A85 /* Build configuration list for PBXNativeTarget "AWApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC0AF5B2028D95A00054A85 /* Debug */,
+				FEC0AF5C2028D95A00054A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
